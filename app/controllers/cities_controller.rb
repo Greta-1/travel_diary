@@ -69,6 +69,6 @@ class CitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def city_params
-params.fetch(:city, {}).permit(:name)
+params.fetch(:review, {}).permit(:title, :body, :city_id, :picture)
     end
 end
