@@ -69,6 +69,7 @@ class ReviewsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def review_params
-      params.fetch(:review, {}).permit(:title, :body, :city_id)
+      #params.fetch(:review, {}).permit(:name, :picture) 
+      params.fetch(:review, {}).permit(:title, :body, :city_id, :picture)
     end
 end

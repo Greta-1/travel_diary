@@ -34,8 +34,8 @@ class CitiesController < ApplicationController
         format.html { render :new }
         format.json { render json: @city.errors, status: :unprocessable_entity }
       end
-    end
   end
+end
 
   # PATCH/PUT /cities/1
   # PATCH/PUT /cities/1.json
@@ -61,7 +61,7 @@ class CitiesController < ApplicationController
     end
   end
 
-  private
+private
     # Use callbacks to share common setup or constraints between actions.
     def set_city
       @city = City.find(params[:id])
@@ -69,6 +69,7 @@ class CitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def city_params
-params.fetch(:city, {}).permit(:name)
+      #params.fetch(:city, {}).permit(:name, :picture)
+      params.fetch(:city, {}).permit(:name, :picture)
     end
 end
