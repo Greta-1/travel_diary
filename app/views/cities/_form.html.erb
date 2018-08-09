@@ -11,9 +11,13 @@
     </div>
   <% end %>
 
-<p>Name: <%= f.text_field :name %></p>
-<p>Picture: <%= f.file_field :picture %>
-  <div class="actions">
-    <%= f.submit %>
+  <div class ="form-fields">
+    <p>Name: <%= f.text_field :name %></p>
+    <p>Picture: <%= f.file_field :picture %>
   </div>
+
+<div class= "actions">
+  <%= f.submit %>
+</div>
+
 <% end %>
