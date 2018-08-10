@@ -17,6 +17,11 @@
  body{
 background-color: #EAEAEA; margin-top: 0;
 }
+
+h1 a {
+  text-decoration: none;
+}
+
 #content, .content-grid, .review-body, .page-image img{ margin-left: auto;
 margin-right: auto;
 
@@ -30,14 +35,17 @@ h1.header{ font-size: 5em;
 #content{
 width: 80%; background-color: #FFF;
 }
-.content-grid{ width: 70%;
+.content-grid{
+  width: 85%;
 }
 .content-block{
 display: inline-block; margin-top: 2em; margin-left: 1.5em;
 }
 .content-image img{
 border: 1em solid #D6DEED; border-radius: 1em;
-} .content-title{
+}
+
+.content-title{
   font-weight: 150; font-size: 2em; margin-top: 0.5em; color: #67646F;
 }
 h1.page-title{ font-size: 3em; padding-top: 0.7em; margin-bottom: 1em;
