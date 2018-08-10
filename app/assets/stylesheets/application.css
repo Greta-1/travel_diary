@@ -39,15 +39,19 @@ width: 80%; background-color: #FFF;
   width: 85%;
 }
 .content-block{
-display: inline-block; margin-top: 2em; margin-left: 1.5em;
+display: inline-block; margin-top: 2em; margin-left: 6em;
 }
 .content-image img{
 border: 1em solid #D6DEED; border-radius: 1em;
 }
 
 .content-title{
-  font-weight: 150; font-size: 2em; margin-top: 0.5em; color: #67646F;
+  font-weight: 150;
+  font-size: 2em;
+  margin-top: 0.5em;
+  color: #67646F;
 }
+
 h1.page-title{ font-size: 3em; padding-top: 0.7em; margin-bottom: 1em;
 }
 .page-image img{ display: block;
